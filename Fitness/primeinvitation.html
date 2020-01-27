@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+<style>
+	.logo{
+		width: 70px;
+		height: auto;
+		 
+	}
+	.navbar{
+		padding-bottom: 10px; 
+	}
+	.nav{
+		padding-top: 15px;
+	}
+	.div1{
+		background-color: white;
+		border-radius: 5px;
+		margin-left: 150px;
+		margin-right: 150px;
+		
+	}
+	.caraousel{
+		padding: 10px 30px;
+	}
+	body{
+		background-image: url(texture.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	.main{
+		margin-top: 80px;
+		
+	}
+	.content{
+		display: block;
+    margin: auto;
+	}
+	.btn{
+		align-items: center;
+	}
+	.foot{
+		border-top: 10px solid #474444;
+		margin-top: 10px;
+		padding-top: 10px;
+		color: #9d9d9d;
+		padding-bottom: 30px;
+	}
+	.foot-nav li{
+		display: inline;
+	}
+	.foot-nav li:not(:first-child):before{
+		content: '|';
+		padding: 0 10px;
+	}
+	.nav1 li:hover{
+		background-color: red;
+		border: 1px solid black;
+		border-radius: 20px 0 20px 0;
+	}
+	.drop1 li:hover{
+		background-color: none;
+		border: none;
+		border-radius: 0;
+	}
+	.div3{
+		padding: 0 20px;
+	}
+	.thumbnail{
+		width: 100%;
+		overflow: hidden;
+	}
+	.gallery{
+		-webkit-transition:all 0.5s ease;
+	}
+	.gallery:hover{
+		transform: scale(1.3);
+	}
+	</style>
+
+	</style>
+
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top animated bounceInUp">
+
+	<div class="container">
+	
+		<a href="Index.html" class="navbar-brand"><img class="logo" src="prime-gym.png" align=middle ></a>
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<div class="collapse navbar-collapse navHeaderCollapse">
+			<ul class="nav1 nav navbar-nav navbar-right">
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="About US.html">About Us</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services<b class="caret"></b></a>
+				<ul class="drop1 dropdown-menu">
+					<li><a href="Tanning.html">Tanning</a></li>
+					<li><a href="Esthetician.html">Esthetician</a></li>
+					<li><a href="Coffee Smothie BAr.html">Coffee Smoothie Bar</a></li>
+					<li><a href="Kids CLub.html">Kids Club</a></li>
+					<li><a href="massage.html">Massage</a></li>
+				</ul>
+				</li>
+				<li><a href="Staff.html">Our Staff</a></li>
+				<li class="active"><a href="Gallery.html">Gallery</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="form-2.html">Members</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			
+		</div> 
+	</div>
+	
+</div>
+<div class="main container" style="background-color: white">
+	<div style="border-bottom: 5px double grey">
+		<h2 style="text-align: center">Prime Invitational 2016</h2>
+	</div>	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi1.png">
+						<img class="gallery" src="invi1.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi2.png">
+						<img class="gallery" src="invi2.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi3.png">
+						<img class="gallery" src="invi3.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi4.png">
+						<img class="gallery" src="invi4.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="invi5.png">
+						<img class="gallery" src="invi5.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi6.png">
+						<img class="gallery" src="invi6.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi7.png">
+						<img class="gallery" src="invi7.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi8.png">
+						<img class="gallery" src="invi8.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi9.png">
+						<img class="gallery" src="invi9.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi10.png">
+						<img class="gallery" src="invi10.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi11.png">
+						<img class="gallery" src="invi11.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi12.png">
+						<img class="gallery" src="invi12.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi13.png">
+						<img class="gallery" src="invi13.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi14.png">
+						<img class="gallery" src="invi14.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi15.png">
+						<img class="gallery" src="invi15.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi16.png">
+						<img class="gallery" src="invi16.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi17.png">
+						<img class="gallery" src="invi17.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi18.png">
+						<img class="gallery" src="invi18.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" class="fancybox-thumb" rel="fancybox-thumb" href="invi19.png">
+						<img class="gallery" src="invi19.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi20.png">
+						<img class="gallery" src="invi20.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi21.png">
+						<img class="gallery" src="invi21.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi22.png">
+						<img class="gallery" src="invi22.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi24.png">
+						<img class="gallery" src="invi24.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi25.png">
+						<img class="gallery" src="invi25.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi26.png">
+						<img class="gallery" src="invi26.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi27.png">
+						<img class="gallery" src="invi27.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi28.png">
+						<img class="gallery" src="invi28.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi29.png">
+						<img class="gallery" src="invi29.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi30.png">
+						<img class="gallery" src="invi30.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi31.png">
+						<img class="gallery" src="invi31.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi32.png">
+						<img class="gallery" src="invi32.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi33.png">
+						<img class="gallery" src="invi33.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi34.png">
+						<img class="gallery" src="invi34.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi35.png">
+						<img class="gallery" src="invi35.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi36.png">
+						<img class="gallery" src="invi36.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi37.png">
+						<img class="gallery" src="invi37.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi38.png">
+						<img class="gallery" src="invi38.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi39.png">
+						<img class="gallery" src="invi39.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi40.png">
+						<img class="gallery" src="invi40.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="invi41.png">
+						<img class="gallery" src="invi41.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi42.png">
+						<img class="gallery" src="invi42.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi43.png">
+						<img class="gallery" src="invi43.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi44.png">
+						<img class="gallery" src="invi44.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi45.png">
+						<img class="gallery" src="invi45.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi46.png">
+						<img class="gallery" src="invi46.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi47.png">
+						<img class="gallery" src="invi47.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi48.png">
+						<img class="gallery" src="invi48.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi49.png">
+						<img class="gallery" src="invi49.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi50.png">
+						<img class="gallery" src="invi50.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi51.png">
+						<img class="gallery" src="invi51.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi52.png">
+						<img class="gallery" src="invi52.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi54.png">
+						<img class="gallery" src="invi54.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" class="fancybox-thumb" rel="fancybox-thumb" href="invi55.png">
+						<img class="gallery" src="invi55.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi56.png">
+						<img class="gallery" src="invi56.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="invi57.png">
+						<img class="gallery" src="invi57.png" alt="invi">
+					</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<footer class="foot animated bounceInDown">
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-5">
+		<p>Copyright @ 2014. invi Fitness. All Right Reserved.</p>
+		</div>
+		<div class="col-sm-2">
+			
+		</div>
+		<div class="foot-nav col-sm-5">
+			<ul>
+				<li>admin@primefitness.com</li>
+				<li>+92 333 1234567</li>
+			</ul>
+		</div>
+		</div>
+		</div>
+	</footer>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel.pack.js"></script>
+	
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+	
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+	
+<script type="text/javascript">	
+	$(document).ready(function() {
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+});
+</script>
+
+</body>
+</html>

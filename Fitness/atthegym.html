@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+<style>
+	.logo{
+		width: 70px;
+		height: auto;
+		 
+	}
+	.navbar{
+		padding-bottom: 10px; 
+	}
+	.nav{
+		padding-top: 15px;
+	}
+	.div1{
+		background-color: white;
+		border-radius: 5px;
+		margin-left: 150px;
+		margin-right: 150px;
+		
+	}
+	.caraousel{
+		padding: 10px 30px;
+	}
+	body{
+		background-image: url(texture.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	.main{
+		margin-top: 80px;
+		
+	}
+	.content{
+		display: block;
+    margin: auto;
+	}
+	.btn{
+		align-items: center;
+	}
+	.foot{
+		border-top: 10px solid #474444;
+		margin-top: 10px;
+		padding-top: 10px;
+		color: #9d9d9d;
+		padding-bottom: 30px;
+	}
+	.foot-nav li{
+		display: inline;
+	}
+	.foot-nav li:not(:first-child):before{
+		content: '|';
+		padding: 0 10px;
+	}
+	.nav1 li:hover{
+		background-color: red;
+		border: 1px solid black;
+		border-radius: 20px 0 20px 0;
+	}
+	.drop1 li:hover{
+		background-color: none;
+		border: none;
+		border-radius: 0;
+	}
+	.div3{
+		padding: 0 20px;
+	}
+	.thumbnail{
+		width: 100%;
+		overflow: hidden;
+	}
+	.gallery{
+		-webkit-transition:all 0.5s ease;
+	}
+	.gallery:hover{
+		transform: scale(1.3);
+	}
+	</style>
+
+	</style>
+
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top animated bounceInUp">
+
+	<div class="container">
+	
+		<a href="Index.html" class="navbar-brand"><img class="logo" src="prime-gym.png" align=middle ></a>
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<div class="collapse navbar-collapse navHeaderCollapse">
+			<ul class="nav1 nav navbar-nav navbar-right">
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="About US.html">About Us</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services<b class="caret"></b></a>
+				<ul class="drop1 dropdown-menu">
+					<li><a href="Tanning.html">Tanning</a></li>
+					<li><a href="Esthetician.html">Esthetician</a></li>
+					<li><a href="Coffee Smothie BAr.html">Coffee Smoothie Bar</a></li>
+					<li><a href="Kids CLub.html">Kids Club</a></li>
+					<li><a href="massage.html">Massage</a></li>
+				</ul>
+				</li>
+				<li><a href="Staff.html">Our Staff</a></li>
+				<li class="active"><a href="Gallery.html">Gallery</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="form-2.html">Members</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			
+		</div> 
+	</div>
+	
+</div>
+<div class="main container" style="background-color: white">
+	<div style="border-bottom: 5px double grey">
+		<h2 style="text-align: center">At the Gym</h2>
+	</div>	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym1.png">
+						<img class="gallery" src="gym1.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym2.png">
+						<img class="gallery" src="gym2.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym3.png">
+						<img class="gallery" src="gym3.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym4.png">
+						<img class="gallery" src="gym4.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="gym5.png">
+						<img class="gallery" src="gym5.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym7.png">
+						<img class="gallery" src="gym7.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym8.png">
+						<img class="gallery" src="gym8.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym9.png">
+						<img class="gallery" src="gym9.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym10.png">
+						<img class="gallery" src="gym10.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym11.png">
+						<img class="gallery" src="gym11.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym12.png">
+						<img class="gallery" src="gym12.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym13.png">
+						<img class="gallery" src="gym13.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym14.png">
+						<img class="gallery" src="gym14.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym15.png">
+						<img class="gallery" src="gym15.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym16.png">
+						<img class="gallery" src="gym16.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym18.png">
+						<img class="gallery" src="gym18.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" class="fancybox-thumb" rel="fancybox-thumb" href="gym19.png">
+						<img class="gallery" src="gym19.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+			<div class="thumbnail">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="gym20.png">
+						<img class="gallery" src="gym20.png" alt="gym">
+					</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<footer class="foot animated bounceInDown">
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-5">
+		<p>Copyright @ 2014. gym Fitness. All Right Reserved.</p>
+		</div>
+		<div class="col-sm-2">
+			
+		</div>
+		<div class="foot-nav col-sm-5">
+			<ul>
+				<li>admin@primefitness.com</li>
+				<li>+92 333 1234567</li>
+			</ul>
+		</div>
+		</div>
+		</div>
+	</footer>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel.pack.js"></script>
+	
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+	
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+	
+<script type="text/javascript">	
+	$(document).ready(function() {
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+});
+</script>
+
+</body>
+</html>

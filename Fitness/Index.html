@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+	.logo{
+		width: 70px;
+		height: auto;
+		 
+	}
+	.navbar{
+		padding-bottom: 10px; 
+	}
+	.nav{
+		padding-top: 15px;
+	}
+	.div1{
+		background-color: white;
+		
+		margin-left: 150px;
+		margin-right: 150px;
+		
+	}
+	.caraousel{
+		padding: 10px 30px;
+	}
+	body{
+		background-image: url(texture.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	.main{
+		margin-top: 90px;
+		border-radius: 5px;
+		padding-bottom: 15px;
+	}
+	.content{
+		display: block;
+    margin: auto;
+	}
+	.btn{
+		align-items: center;
+	}
+	.foot{
+		border-top: 10px solid #474444;
+		margin-top: 10px;
+		padding-top: 10px;
+		color: #9d9d9d;
+		padding-bottom: 30px;
+	}
+	.foot-nav li{
+		display: inline;
+	}
+	.foot-nav li:not(:first-child):before{
+		content: '|';
+		padding: 0 10px;
+	}
+	.nav1 li:hover{
+		background-color: red;
+		border: 1px solid black;
+		border-radius: 20px 0 20px 0;
+	}
+	.drop1 li:hover{
+		background-color: none;
+		border: none;
+		border-radius: 0;
+	}
+	.div3{
+		padding: 0 20px;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+
+	</style>
+
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top animated bounceInUp">
+
+	<div class="container">
+	
+		<a href="Index.html" class="navbar-brand"><img class="logo" src="prime-gym.png" align=middle ></a>
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<div class="collapse navbar-collapse navHeaderCollapse">
+			<ul class="nav1 nav navbar-nav navbar-right">
+				<li class="active"><a href="Index.html">Home</a></li>
+				<li><a href="About US.html">About Us</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services<b class="caret"></b></a>
+				<ul class="drop1 dropdown-menu">
+					<li><a href="Tanning.html">Tanning</a></li>
+					<li><a href="Esthetician.html">Esthetician</a></li>
+					<li><a href="Coffee Smothie BAr.html">Coffee Smoothie Bar</a></li>
+					<li><a href="Kids CLub.html">Kids Club</a></li>
+					<li><a href="massage.html">Massage</a></li>
+				</ul>
+				</li>
+				<li><a href="Staff.html">Our Staff</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="form-2.html">Members</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			
+		</div> 
+	</div>
+	
+</div>
+<div class="main container" style="background-color: white">
+
+
+
+<div class="caraousel animated bounceInLeft">
+	
+	
+ 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+   
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      
+    </ol>
+
+   
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="muscular-man-lifting-a-barbell-in-gym_1163-3548.jpg" alt="Los Angeles" style="width:100%;">
+<div class="carousel-caption"><h1 class="animated bounceInLeft">Muscular</h1> </div>
+      </div>
+
+      <div class="item">
+        <img src="woman-in-sports-shoes-running-on-treadmill_23-2147688019.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption"><h1 class="animated zoomInLeft">Running</h1> </div>
+      </div>
+    
+      <div class="item">
+        <img src="weights-exercise-weightlifter-strong-athletic_1139-709.jpg" alt="New york" style="width:100%;">
+      <div class="carousel-caption"><h1 class="animated swing">Weight Lifting</h1></div>
+      </div>
+      
+      <div class="item">
+        <img src="woman-sitting-at-gym_23-2147688081.jpg" alt="New york" style="width:100%;">
+      <div class="carousel-caption"><h1 class="animated bounceInUp">View</h1></div>
+      </div>
+      
+      <div class="item">
+        <img src="woman-doing-sit-ups-on-a-machine_1208-282.jpg" alt="New york" style="width:100%;">
+      <div class="carousel-caption"><h1 class="animated rubberBand">Leg Exercise</h1></div>
+      </div>
+     
+    </div>
+
+ 
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+	</div>
+	
+	<p class="animated rubberBand" style="text-align: center">Prime Fitness is often compared to an elegant country club. Our 22,000 square foot two-level, full-service fitness facility is much more than a gym. We strive to serve the needs and interests of every member. We provide the area's premier credentialed fitness trainers, hot yoga studios and more than 40 group exercise studio classes complimentary to members, including beginning, intermediate and advanced health and fitness levels. Prime Fitness is a finished club where the architecture directly complements the vision of creating an elegant home-style environment that exceeds all expectation.</p>
+	
+	<div class=" container">
+	<div class="row">
+	<div class="div3 col-md-4 animated bounceInUp">
+		<h3 style="text-align: center"><a href="Fitness Tools.html" style="color: black">FITNESS TOOLS</a></h3>
+			<a href="Fitness Tools.html"><img class="content" src="download.png" alt="tools" style="width: 45%; height: 30%"></a>
+			<a href="Fitness Tools.html" style="color: black"><p style="text-align: center">
+				Personal fitness resources, tools & education designed just for our members.
+		</p></a>
+			<a href="Fitness Tools.html" class="btn btn-default" style="background-color: #575653; color: white; margin: auto; display: table">Click Here</a>
+		</div>
+		<div class="div3 col-md-4 animated zoomInLeft">
+		<h3 style="text-align: center"><a href="Staff.html" style="color: black">TRAINER & STAFF</a></h3>
+			<a href="Staff.html"><img class="content" src="fit-couple.png" alt="tools" style="width: 29%; height: 5%"></a>
+			<a href="Staff.html" style="color: black"><p style="text-align: center">
+				Personal Fitness resources provides the area's premier credentialed fitness trainers and staff.
+			</p></a>
+			<a href="Staff.html" class="btn btn-default" style="background-color: #575653; color: white; margin: auto; display: table" >Click Here</a>
+		</div>
+		<div class="div3 col-md-4 animated bounceInLeft">
+		<h3 style="text-align: center"><a href="Calender.html" style="color: black">SCHEDULES</a></h3>
+			<a href="Calender.html"><img class="content" src="calendar-icon-32.png" alt="tools" style="width: 41.3%"></a>
+			<a href="Calender.html" style="color: black"><p style="text-align: center">
+				Personal fitness, group fitness and hot yoga calender / schedules.
+ 			</p></a>
+			<a href="Calender.html" class="  btn btn-default" style="background-color: #575653; color: white; margin: auto; display: table">Click Here</a>
+		</div>
+		
+	</div>
+	</div>
+	<div>
+	<a href="group_fitness_classes.html" style="color: black"><h3>GROUP FITNESS CLASSES</h3></a>
+	<div class="container">
+		<div class="row">
+	<div class="col-md-1">
+	
+	</div>
+	<div class="col-md-2">
+		<img src="mj-618_348_strength-in-numbers.jpg" alt="" style="width: 100%">
+		
+	</div>
+	<div class="col-md-2">
+		<img src="Motivation.jpg" alt="" style="width: 100%">
+		
+	</div>
+	<div class="col-md-2">
+		<img src="46688611_l.jpg" alt="" style="width: 100%" align=middle>
+		
+	</div>
+	<div class="col-md-2">
+		<img src="class--chisel-it-2e351495929ff63238b86f54fcd32df46d11d028ec773ebd051e6dd2d8957387.jpg" alt="" style="width: 100%; display: block; margin: auto" align=middle>
+		
+	</div>
+	<div class="col-md-2">
+		<img src="getImage.jpg" alt="" style="width: 100%; align: middle">
+		
+	</div>
+	<div class="col-md-1">
+		
+		
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="container">
+	<div class="row">
+	<div class="col-md-4">
+		<a href="Contact.html" style="color: black"><h3 style="text-align: center">CONTACT INFO</h3></a>
+		<p style="text-align: center"><a href="Contact.html" style="color: black">Sate Route 410 E, Suite 100 18209<br>Bonney lake, WA 98391<br>Call Now: 021-31234567<br><br>General Manager:Jason Salers<br></a><span><a href="https://www.facebook.com/Prime-Gymnastics-Club-122941307809887/"><img src="social/Picons Social/PNG/24/social-006_facebook.png" alt=""></a><a href="https://twitter.com/primefitness100"><img src="social/Picons Social/PNG/24/social-003_twitter.png" alt=""></a><a href="https://www.youtube.com/watch?v=TRC3OKYYL9o"><img src="social/Picons Social/PNG/24/social-018_youtube.png" alt=""></a><a href="https://www.instagram.com/primegymnastics/"><img src="social/Picons Social/PNG/24/social-038_instagram.png" alt="insta"></a></span> </p>
+	</div>
+	<div class="col-md-3" style="">
+		<a href="Contact.html" style="color: black"><h3 style="text-align: center">HOURS</h3></a>
+		<p style="text-align: center"><a href="Contact.html" style="color: black">Monday – Friday:<br> 11 a.m. – 7 p.m.<br>Saturday:<br> 9 a.m. – 2 p.m.<br>Sunday:<br> 9 a.m. – 1 p.m.<br> </p></a>
+	</div>
+	<div class="col-md-5">
+		<h3 style="text-align: center">MAP</h3>
+	
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.0111387485154!2d-79.8122063!3d41.4010245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88331eb960f66dbb%3A0xb7be2e16f1906a23!2sPrime+Fitness+USA!5e0!3m2!1sen!2s!4v1514565332669" width="90%" frameborder="0" style="border:0; display:block;margin: auto" allowfullscreen></iframe>
+		
+	</div>
+	</div>
+	</div>
+	<div class="container">
+	<h2 style="text-align: center">SOCIAL FEEDS</h2>
+		<div class="row">
+			<div class="col-sm-1">
+	
+			</div>
+			<div class="col-sm-5">
+					<div style="border-left:20px solid black;border-right: 20px solid black; border-top: 40px solid black; border-bottom: 40px solid black; border-radius: 25px;box-shadow: 0 10px 15px #888; "><a class="twitter-timeline" data-lang="en" data-width="415" data-height="415" data-theme="light" href="https://twitter.com/primefitness100?ref_src=twsrc%5Etfw" >Tweets by primefitness100</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+			</div>
+		<div class="col-sm-5">
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprimegymnasticsclub%2F&tabs=timeline&width=315&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=183243555750827" width="340" height="500" style="border-left:20px solid black;border-right:20px solid black;border-bottom:40px solid black;border-top:40px solid black;border-radius: 25px;box-shadow: 0 10px 15px #888;display: block;margin: auto;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+		</div>
+			<div class="col-sm-1">
+				
+			</div>
+		</div>
+	</div>
+	
+	</div>
+	
+	<footer class="foot animated bounceInDown">
+	<div class="container">
+	<div class="col-sm-5">
+		<p>Copyright @ 2014. Prime Fitness. All Right Reserved.</p>
+		</div>
+		<div class="col-sm-2">
+			
+		</div>
+		<div class="foot-nav col-sm-5">
+			<ul>
+				<li>admin@primefitness.com</li>
+				<li>+92 333 1234567</li>
+			</ul>
+		</div>
+		</div>
+	</footer>
+
+	
+	
+	
+</body>
+</html>
+ 

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form validation with JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	#wrapper {
+  width: 30%;
+  margin: 50px auto;
+  padding: 50px;
+  background: #D7FBFF;
+}
+form {
+  margin: 30px auto;
+}
+.textInput {
+  border: none;
+  height: 28px;
+  margin: 2px;
+  border: 1px solid #6B7363;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 95%;
+}
+.textInput:focus {
+  outline: none;
+}
+.btn {
+  width: 98.6%;
+  border: none;
+  margin-top: 5px;
+  color: white;
+  background-color: #3b5998;
+  border-radius: 5px;
+  padding: 12px;
+}
+	  
+	  	.logo{
+		width: 70px;
+		height: auto;
+	}
+	.navbar{
+		padding-bottom: 10px; 
+	}
+	.nav{
+		padding-top: 15px;
+	}
+	ul li:hover{
+		background-color: red;
+		border: 1px solid black;
+		border-radius: 20px 0 20px 0;
+	}
+	.div1{
+		background-color: white;
+		
+		margin-left: 15%;
+		margin-right: 15%;
+		padding: 3% 0px 3% 0px;
+	}
+	body{
+		background-image: url(texture.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	.main{
+		margin-top: 90px;
+		border-radius: 5px;
+		padding: 0 20%;
+	}
+	.content{
+		margin-top: 0px;
+	}
+	.button{
+
+		color: white;
+		background-color: black;
+	}
+	.form-horizontal{
+		padding: 10px 10px;
+	}
+	
+	.img2 {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+		.foot{
+		border-top: 10px solid #474444;
+		margin-top: 80px;
+		padding-top: 10px;
+		color: #9d9d9d;
+		padding-bottom: 30px;
+	}
+	.foot-nav li{
+		display: inline;
+	}
+	.foot-nav li:not(:first-child):before{
+		content: '|';
+		padding: 0 10px;
+	}
+	
+
+	</style>
+</head>
+<body>
+ <div class="navbar navbar-inverse navbar-fixed-top">
+
+	<div class="container">
+	
+		<a href="Index.html" class="navbar-brand"><img class="logo" src="prime-gym.png" style="align: middle" ></a>
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<div class="collapse navbar-collapse navHeaderCollapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="About US.html">About Us</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="Tanning.html">Tanning</a></li>
+					<li><a href="Esthetician.html">Esthetician</a></li>
+					<li><a href="Coffee Smothie BAr.html">Coffee Smoothie Bar</a></li>
+					<li><a href="Kids CLub.html">Kids Club</a></li>
+					<li><a href="massage.html">Massage</a></li>
+				</ul>
+				</li>
+				<li><a href="Staff.html">Our Staff</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li class="active"><a href="form-2.html">Members</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			
+		</div> 
+	</div>
+	
+</div>
+ 
+  <div class="main container" style="background-color: white">
+  <a href="Index.html"><img class="img2" src="prime-gym.png" alt="Prime Gym"></a>
+  <h2 style="text-align: center">Members Area</h2>
+   <form method="POST" onsubmit="return Validate()" name="vform" >
+   
+   	<div id="email_div">
+   	  <label>Email</label> <br>
+   	  <input type="email" name="email" class="textInput">
+   	  <div id="email_error"></div>
+   	</div>
+   	<div id="password_div">
+   	  <label>Password</label> <br>
+   	  <input type="password" name="password" class="textInput">
+	   </div>
+   	<div>
+   	<input type="submit" name="register" value="register" class="btn">
+   	</div>
+   </form>
+  </div>
+  
+  <footer class="foot">
+	<div class="container">
+	<div class="col-sm-5">
+		<p>Copyright &copy; 2018. Prime Fitness. All Right Reserved.</p>
+		</div>
+		<div class="col-sm-2">
+			
+		</div>
+		<div class="foot-nav col-sm-5">
+			<ul>
+				<li>admin@primegym.com</li>
+				<li>+92 333 1234567</li>
+			</ul>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>
+<script type="text/javascript">
+// SELECTING ALL TEXT ELEMENTS
+var email = document.forms['vform']['email'];
+var password = document.forms['vform']['password'];
+// SELECTING ALL ERROR DISPLAY ELEMENTS
+var email_error = document.getElementById('email_error');
+var password_error = document.getElementById('password_error');
+// SETTING ALL EVENT LISTENERS
+email.addEventListener('blur', emailVerify, true);
+password.addEventListener('blur', passwordVerify, true);
+// validation function
+function Validate() {
+ 
+  // validate email
+  if (email.value == "") {
+    email.style.border = "1px solid red";
+    document.getElementById('email_div').style.color = "red";
+    email_error.textContent = "Email is required";
+    email.focus();
+    return false;
+  }
+  // validate password
+  if (password.value == "") {
+    password.style.border = "1px solid red";
+    document.getElementById('password_div').style.color = "red";
+    password_confirm.style.border = "1px solid red";
+    password_error.textContent = "Password is required";
+    password.focus();
+    return false;
+  }
+
+}
+// event handler functions
+
+function emailVerify() {
+  if (email.value != "") {
+  	email.style.border = "1px solid #5e6e66";
+  	document.getElementById('email_div').style.color = "#5e6e66";
+  	email_error.innerHTML = "";
+  	return true;
+  }
+}
+function passwordVerify() {
+  if (password.value != "") {
+  	password.style.border = "1px solid #5e6e66";
+  	document.getElementById('pass_confirm_div').style.color = "#5e6e66";
+  	document.getElementById('password_div').style.color = "#5e6e66";
+  	password_error.innerHTML = "";
+  	return true;
+  }
+
+}
+</script>

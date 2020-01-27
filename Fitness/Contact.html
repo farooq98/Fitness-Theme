@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+	.logo{
+		width: 70px;
+		height: auto;
+	}
+	.navbar{
+		padding-bottom: 10px; 
+	}
+	.nav{
+		padding-top: 15px;
+	}
+	.nav1 li:hover{
+		background-color: red;
+		border: 1px solid black;
+		border-radius: 20px 0 20px 0;
+	}
+	.drop1 li:hover{
+		background-color: none;
+		border: none;
+		border-radius: 0;
+	}
+	.div1{
+		background-color: white;
+		border-radius: 5px;
+		margin-left: 150px;
+		margin-right: 150px;
+		padding: 30px 0px 30px 0px;
+	}
+	body{
+		background-image: url(texture.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	.main{
+		margin-top: 90px;
+		background-color: white;
+		border-radius: 5px;
+		padding: 30px 0 30px 0;
+		
+	}
+	.content{
+		margin-top: 0px;
+	}
+	.button{
+
+		color: white;
+		background-color: black;
+	}
+	.form-horizontal{
+		padding: 10px 10px;
+	}
+	
+	.img2 {
+    display: block;
+    margin: auto;
+    width: 15%;
+		height: 10%;
+}
+		.foot{
+		border-top: 10px solid #474444;
+		margin-top: 80px;
+		padding-top: 10px;
+		color: #9d9d9d;
+		padding-bottom: 30px;
+	}
+	.foot-nav li{
+		display: inline;
+	}
+	.foot-nav li:not(:first-child):before{
+		content: '|';
+		padding: 0 10px;
+	}
+	.content{
+		display: block;
+    margin: auto;
+		
+	}
+	
+
+	</style>
+
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+
+	<div class="container">
+	
+		<a href="Index.html" class="navbar-brand"><img class="logo" src="prime-gym.png" style="align: middle" ></a>
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<div class="collapse navbar-collapse navHeaderCollapse">
+			<ul class="nav1 nav navbar-nav navbar-right">
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="About US.html">About Us</a></li>
+				<li class="drop1 dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="Tanning.html">Tanning</a></li>
+					<li><a href="Esthetician.html">Esthetician</a></li>
+					<li><a href="Coffee Smothie BAr.html">Coffee Smoothie Bar</a></li>
+					<li><a href="Kids CLub.html">Kids Club</a></li>
+					<li><a href="massage.html">Massage</a></li>
+				</ul>
+				</li>
+				<li><a href="Staff.html">Our Staff</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="form-2.html">Members</a></li>
+				<li class="active"><a href="Contact.html">Contact</a></li>
+			</ul>
+			
+		</div> 
+	</div>
+	
+</div>
+<div class="main container" style="background-color: white">
+<div>
+<h2 style="text-align: center; border-bottom: 5px double grey">Contact Us</h2><br><br>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-5" style="text-align: center">
+	<h2>Get in touch!</h2>
+	<p>+65 67732901  //  admin@primegym.com<br>
+Prime Gymnastics Club<br>
+17A Lorong 7 #01-190 Toa Payoh<br>
+Singapore 311017</p>
+<h2>Operating Hours</h2>
+<p>Monday – Friday: 11 a.m. – 7 p.m.<br>
+Saturday: 9 a.m. – 2 p.m.<br>
+Sunday: 9 a.m. – 1 p.m.</p>
+</div>
+<div class="col-sm-7" >
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.0111387485154!2d-79.8122063!3d41.4010245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88331eb960f66dbb%3A0xb7be2e16f1906a23!2sPrime+Fitness+USA!5e0!3m2!1sen!2s!4v1514565332669" width="400px" height="300px" frameborder="0" style="border:0; display:block;margin: auto" allowfullscreen></iframe>
+</div>
+</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			
+		
+	<div class="col-sm-8">
+	<h2 style="text-align: center">Queries/Feedback</h2>
+		<form class="form-horizontal">
+  <div class="form-group">
+      <label class="control-label col-sm-2" for="text">Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="text" placeholder="Name" name="fname">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+      </div>
+    </div>
+   
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="phone">Phone:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="phone" placeholder="+92 337 12345678" name="phone">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="subject">Subject:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="subject" placeholder="Subject" name="phone">
+      </div>
+    </div>
+   
+   <div class="form-group">
+  <label class="control-label col-sm-2" for="terms">Message:</label>
+  <div class="col-sm-10"><textarea class="form-control" rows="5" id="message" placeholder="Message"></textarea>
+</div>
+	 </div>
+    
+    
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="button btn btn-default" >Send</button>
+       </div>
+	 </div>
+  </form>
+	</div>
+	
+	<div class="col-sm-4">
+	<h2 style="text-align: center">Team Member</h2>	<br>
+	<img class="content img-rounded" src="35bf2d_0a6ca9738bb54c06ab7a2c2adb97d7d4_mv2_d_2980_1974_s_2.webp " alt="kuchbhi" style="width: 100%" >
+	</div>
+	</div>
+	</div>
+	</div>
+		<footer class="foot">
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-5">
+		<p>Copyright @ 2014. Prime Fitness. All Right Reserved.</p>
+		</div>
+		<div class="col-sm-2">
+			
+		</div>
+		<div class="foot-nav col-sm-5">
+			<ul>
+				<li>admin@primefitness.com</li>
+				<li>+92 333 1234567</li>
+			</ul>
+			</div>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>

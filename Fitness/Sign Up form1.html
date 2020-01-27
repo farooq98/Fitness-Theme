@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+	.logo{
+		width: 70px;
+		height: auto;
+	}
+	.navbar{
+		padding-bottom: 10px; 
+	}
+	.nav{
+		padding-top: 15px;
+	}
+	.nav1 li:hover{
+		background-color: red;
+		border: 1px solid black;
+		border-radius: 20px 0 20px 0;
+	}
+	.drop1 li:hover{
+		background-color: none;
+		border: none;
+		border-radius: 0;
+	}
+	.div1{
+		background-color: white;
+		
+		margin-left: 150px;
+		margin-right: 150px;
+		padding: 30px 0px 30px 0px;
+	}
+	body{
+		background-image: url(texture.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	.main{
+		margin-top: 90px;
+		border-radius: 5px;
+		padding: 0 15%;
+	}
+	.content{
+		margin-top: 0px;
+	}
+	.button{
+
+		color: white;
+		background-color: black;
+	}
+	.form-horizontal{
+		padding: 10px 10px;
+	}
+	
+	.img2 {
+    display: block;
+    margin: auto;
+    width: 30%;
+		
+}
+	.foot{
+		border-top: 10px solid #474444;
+		margin-top: 10px;
+		padding-top: 10px;
+		color: #9d9d9d;
+		padding-bottom: 30px;
+	}
+	.foot-nav li{
+		display: inline;
+	}
+	.foot-nav li:not(:first-child):before{
+		content: '|';
+		padding: 0 10px;
+	}
+
+	
+	</style>
+
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+
+	<div class="container">
+	
+		<a href="Index.html" class="navbar-brand"><img class="logo" src="prime-gym.png" style="align: middle" ></a>
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<div class="collapse navbar-collapse navHeaderCollapse">
+			<ul class="nav1 nav navbar-nav navbar-right">
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="About US.html">About Us</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services<b class="caret"></b></a>
+				<ul class="drop1 dropdown-menu">
+					<li><a href="Tanning.html">Tanning</a></li>
+					<li><a href="Esthetician.html">Esthetician</a></li>
+					<li><a href="Coffee Smothie BAr.html">Coffee Smoothie Bar</a></li>
+					<li><a href="Kids CLub.html">Kids Club</a></li>
+					<li><a href="massage.html">Massage</a></li>
+				</ul>
+				</li>
+				<li><a href="Staff.html">Our Staff</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li class="active"><a href="form-2.html">Members</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			
+		</div> 
+	</div>
+	
+</div>
+<div class="main container" style="background-color: white">
+
+<a href="#"><img class="img2" src="prime-gym.png" alt="Prime Gym"></a>
+ <h2 style="text-align: center">Membership Form</h2>
+ <form class="form-horizontal" method="POST" action="index.php" onsubmit="return Validate()" name="vform">
+  <div class="form-group" id="fname_div">
+      <label class="control-label col-sm-2" for="text">First Name:</label>
+      <div class="col-sm-10" id="fname_div">
+        <input type="text" class="textInput form-control" id="text" placeholder="Enter First Name" name="fname">
+        <div id="fname_error"></div>
+      </div>
+    </div>
+    <div class="form-group" id="lname_div">
+      <label class="control-label col-sm-2" for="text">Last Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="textInput form-control" id="text" placeholder="Enter Last Name" name="lname">
+        <div id="lname_error"></div>
+      </div>
+    </div>
+    <div class="form-group" id="email_div">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="textInput form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+   <div class="form-group" id="email_confirm_div">
+      <label class="control-label col-sm-2" for="email">Confirm Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="textInput form-control" id="email" placeholder="Enter email" name="email_confirm">
+        <div id="email_error"></div>
+      </div>
+    </div>
+    <div class="form-group" id="password_div">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">
+        <input type="password" class="textInput form-control" id="pwd" placeholder="Enter email" name="password">
+      </div>
+    </div>
+    <div class="form-group" id="pass_confirm_div">
+      <label class="control-label col-sm-2" for="pwd">Confirm Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="textInput form-control" id="pwd" placeholder="Enter password" name="password_confirm">
+        <div id="password_error"></div>
+      </div>
+    </div>
+    	<div class="form-group"  id="mobile_div">
+      <label class="control-label col-sm-2" for="text">Mobile:</label>
+      <div class="col-sm-10">
+        <input type="number" class="textInput form-control" id="text" placeholder="0312-12345678" name="mobile">
+        <div id="mobile_error"></div>
+      </div>
+    </div>
+    <div class="form-group">
+  <label class="control-label col-sm-2" for="day">Birthday:</label>
+  <div class="col-sm-2">
+  <select class="form-control" id="day">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+	  <option>7</option>
+	  <option>8</option>
+	  <option>9</option>
+	  <option>10</option>
+	  <option>11</option>
+	  <option>12</option>
+	  <option>13</option>
+	  <option>14</option>
+	  <option>15</option>
+	  <option>16</option>
+	  <option>17</option>
+	  <option>18</option>
+	  <option>19</option>
+	  <option>20</option>
+	  <option>21</option>
+	  <option>22</option>
+	  <option>23</option>
+	  <option>24</option>
+	  <option>25</option>
+	  <option>26</option>
+	  <option>27</option>
+	  <option>28</option>
+	  <option>29</option>
+	  <option>30</option>
+	  <option>31</option>
+	 </select>
+</div>
+ <div class="col-sm-4">
+ <select class="form-control" id="month">
+    <option>January</option>
+    <option>Feburary</option>
+    <option>March</option>
+    <option>April</option>
+    <option>May</option>
+    <option>June</option>
+	  <option>July</option>
+	  <option>August</option>
+	  <option>September</option>
+	  <option>Octuber</option>
+	  <option>November</option>
+	  <option>December</option>
+	 </select>
+		</div>
+		<div class="col-sm-4"  id="birthday_div">
+		<input type="number" class="textInput form-control" id="text" placeholder="Year" name="year">
+		<div id="birthday_error"></div>
+		</div>
+	 </div>
+	
+	 
+    
+    <div class="form-group" id="gender_div">        
+      <label class="control-label col-sm-2">Gender:</label>
+        <div class="radio">
+          <label><input type="radio" name="gender">Male</label>
+          <label><input type="radio" name="gender">Female</label>
+          <div id="gender_error"></div>
+        </div>
+	</div>
+   
+   <div class="form-group">
+  <label class="control-label col-sm-2" for="terms">Terms And Conditions:</label>
+  <div class="col-sm-10"><textarea class="form-control" rows="5" id="terms"></textarea>
+</div>
+	 </div>
+    
+    
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember" required>I agree to all the Terms and Conditions.</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="button btn btn-default" name="register" value="register">Register</button>
+       </div>
+	 </div>
+  </form>
+	
+	</div>
+	<footer class="foot">
+	<div class="container">
+	<div class="col-sm-5">
+		<p>Copyright @ 2014. Prime Fitness. All Right Reserved.</p>
+		</div>
+		<div class="col-sm-2">
+			
+		</div>
+		<div class="foot-nav col-sm-5">
+			<ul>
+				<li>admin@primefitness.com</li>
+				<li>+92 333 1234567</li>
+			</ul>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>
+<script type="text/javascript">
+	
+	// SELECTING ALL TEXT ELEMENTS
+var fname = document.forms['vform']['fname'];
+var lname = document.forms['vform']['lname'];	
+var email = document.forms['vform']['email'];
+var email_confirm = document.forms['vform']['email'];
+var password = document.forms['vform']['password'];
+var password_confirm = document.forms['vform']['password_confirm'];
+var mobile = document.forms['vform']['mobile'];
+var birthday = document.forms['vform']['birthday'];	
+// SELECTING ALL ERROR DISPLAY ELEMENTS
+var fname_error = document.getElementById('fname_error');
+var lname_error = document.getElementById('lname_error');	
+var email_error = document.getElementById('email_error');
+var password_error = document.getElementById('password_error');
+var mobile_error = document.getElementById('mobile_error');
+var birthday_error = document.getElementById('birthday_error');	
+// SETTING ALL EVENT LISTENERS
+fname.addEventListener('blur', fnameVerify, true);
+lname.addEventListener('blur', lnameVerify, true);
+email.addEventListener('blur', emailVerify, true);
+password.addEventListener('blur', passwordVerify, true);
+mobile.addEventListener('blur', mobileVerify, true);
+birthday.addEventListener('blur', birthdayVerify, true);
+// validation function
+function Validate() {
+  // validate username
+	if (fname.value == "") {
+    fname.style.border = "1px solid red";
+    document.getElementById('fname_div').style.color = "red";
+    fname_error.textContent = "First name is required";
+    fname.focus();
+    return false;
+  }
+	if (lname.value == "") {
+    lname.style.border = "1px solid red";
+    document.getElementById('lname_div').style.color = "red";
+    lname_error.textContent = "Last name is required";
+    lname.focus();
+    return false;
+  }
+  // validate username
+  if (fname.value.length < 3) {
+    fname.style.border = "1px solid red";
+    document.getElementById('fname_div').style.color = "red";
+    fname_error.textContent = "First name must be at least 3 characters";
+    fname.focus();
+    return false;
+  }
+	if (lname.value.length < 3) {
+    lname.style.border = "1px solid red";
+    document.getElementById('lame_div').style.color = "red";
+    lname_error.textContent = "Last name must be at least 3 characters";
+    lname.focus();
+    return false;
+  }
+  // validate email
+  if (email.value == "") {
+    email.style.border = "1px solid red";
+    document.getElementById('email_div').style.color = "red";
+	email_confirm.style.border = "1px solid red";
+    email_error.textContent = "Email is required";
+    email.focus();
+    return false;
+  }
+	// check if the two emails match
+  if (email.value != email_confirm.value) {
+    email.style.border = "1px solid red";
+    document.getElementById('email_confirm_div').style.color = "red";
+    email_confirm.style.border = "1px solid red";
+    email_error.innerHTML = "The two emails do not match";
+    return false;
+  }
+}
+  // validate password
+  if (password.value == "") {
+    password.style.border = "1px solid red";
+    document.getElementById('password_div').style.color = "red";
+    password_confirm.style.border = "1px solid red";
+    password_error.textContent = "Password is required";
+    password.focus();
+    return false;
+  }
+  // check if the two passwords match
+  if (password.value != password_confirm.value) {
+    password.style.border = "1px solid red";
+    document.getElementById('pass_confirm_div').style.color = "red";
+    password_confirm.style.border = "1px solid red";
+    password_error.innerHTML = "The two passwords do not match";
+    return false;
+  }
+}
+// event handler functions
+function fnameVerify() {
+  if (fname.value != "") {
+   fname.style.border = "1px solid #5e6e66";
+   document.getElementById('fname_div').style.color = "#5e6e66";
+   fname_error.innerHTML = "";
+   return true;
+  }
+}
+	function lnameVerify() {
+  if (lname.value != "") {
+   lname.style.border = "1px solid #5e6e66";
+   document.getElementById('lname_div').style.color = "#5e6e66";
+   lname_error.innerHTML = "";
+   return true;
+  }
+}
+function emailVerify() {
+  if (email.value != "") {
+  	email.style.border = "1px solid #5e6e66";
+  	document.getElementById('email_div').style.color = "#5e6e66";
+  	email_error.innerHTML = "";
+  	return true;
+  }
+}
+function passwordVerify() {
+  if (password.value != "") {
+  	password.style.border = "1px solid #5e6e66";
+  	document.getElementById('pass_confirm_div').style.color = "#5e6e66";
+  	document.getElementById('password_div').style.color = "#5e6e66";
+  	password_error.innerHTML = "";
+  	return true;
+  }
+  if (password.value === password_confirm.value) {
+  	password.style.border = "1px solid #5e6e66";
+  	document.getElementById('pass_confirm_div').style.color = "#5e6e66";
+  	password_error.innerHTML = "";
+  	return true;
+  }
+}
+	//https://codewithawa.com/posts/form-validation-with-javascript
+</script>
